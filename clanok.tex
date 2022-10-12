@@ -1,6 +1,8 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\documentclass[10pt,twoside,slovak,a4paper]{article} % {coursepaper}
+
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -17,7 +19,9 @@
 
 \title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Meno Priezvisko\\[2pt]
+
+\author{Dominika Lukašáková\\[2pt]
+
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
 	{\small \texttt{...@stuba.sk}}
@@ -41,11 +45,18 @@
 
 Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+
+Uveďte explicitne štruktúru článku.Tu je nejaký príklad.
+
 Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
 Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
 Záverečné poznámky prináša časť~\ref{zaver}.
 
+
+
+\section{Ďalšia časť}
+
+\includegraphics[scale=0.5]{vplyv_na_mozog.drawio.png}
 
 
 \section{Nejaká časť} \label{nejaka}
@@ -115,10 +126,16 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 
+
+\section{Nový text:}
+\input{novy.tex}
+
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+
+\bibliographystyle{plain} % (plain) prípadne alpha, abbrv alebo hociktorý iný
+
 \end{document}
